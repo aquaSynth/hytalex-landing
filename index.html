@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HytaleX — Официальный сервер Hytale</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Верхнее меню -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo-link">
+        <img src="images/logo.png" alt="HytaleX Logo" class="logo">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#about">О СЕРВЕРЕ</a></li>
+        <li><a href="#features">ОСОБЕННОСТИ</a></li>
+        <li><a href="#characters">ПЕРСОНАЖИ</a></li>
+        <li><a href="#community">КОМЬЮНИТИ</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <a href="#join" class="nav-btn">ПРИСОЕДИНИТЬСЯ</a>
+        <a href="#rules" class="nav-btn secondary">ПРАВИЛА</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+    
+ <section id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Добро пожаловать в <span class="title-gradient">HytaleX</span></h1>
+    <p class="hero-subtitle">Уникальный сервер Hytale с анимированными персонажами, динамичным миром и активным комьюнити.</p>
+    <div class="hero-buttons">
+      <a href="#join" class="btn btn-primary">Начать приключение</a>
+      <a href="#about" class="btn btn-secondary">Узнать больше</a>
+    </div>
+  </div>
+  <div class="hero-characters">
+    <!-- Lottie анимация -->
+    <lottie-player 
+      src="assets/animations/character-1.json" 
+      background="transparent" 
+      speed="1" 
+      style="position: absolute; left: 20%; top: 30%; width: 200px; height: 200px;" 
+      loop 
+      autoplay>
+    </lottie-player>
+    <lottie-player 
+      src="assets/animations/character-2.json" 
+      background="transparent" 
+      speed="1" 
+      style="position: absolute; right: 20%; top: 40%; width: 200px; height: 200px;" 
+      loop 
+      autoplay>
+    </lottie-player>
+  </div>
+ </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Что такое Hytale?</h2>
+      <p class="section-text">Hytale — это захватывающая игра в жанре песочницы с элементами приключения, крафта и RPG. Наш сервер HytaleX добавляет к этому уникальные режимы и анимированных персонажей.</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section dark-bg">
+    <div class="container">
+      <h2 class="section-title">Особенности сервера</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Анимированные персонажи</h3>
+          <p>Персонажи, которые оживают на экране.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Динамичный мир</h3>
+          <p>Мир, который меняется в реальном времени.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Активное комьюнити</h3>
+          <p>Дружное сообщество игроков.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters" class="section">
+    <div class="container">
+      <h2 class="section-title">Наши персонажи</h2>
+      <div class="characters-grid">
+        <div class="character-item">
+          <img src="images/character-1.png" alt="Character 1">
+          <h3>Маг</h3>
+          <p>Мастер магии и заклинаний.</p>
+        </div>
+        <div class="character-item">
+          <img src="images/character-2.png" alt="Character 2">
+          <h3>Воин</h3>
+          <p>Сильный и отважный воин.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section dark-bg">
+    <div class="container">
+      <h2 class="section-title">Частые вопросы</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <h3>Как начать играть?</h3>
+          <p>Скачайте клиент Hytale и подключитесь к нашему серверу.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Есть ли правила?</h3>
+          <p>Да, правила можно найти в разделе "Правила" на сайте.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 HytaleX. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
